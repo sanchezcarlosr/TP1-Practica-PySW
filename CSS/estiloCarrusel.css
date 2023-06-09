@@ -1,0 +1,48 @@
+
+#conteItemsCarrusel{
+    height: 200px;
+    width: 1030px;
+    overflow: hidden; /** que es**/
+    /*
+    transition-duration: 10s;
+    transition-timing-function: ease-in-out;
+     ease-in    ease-out  ease-in-out    linear   ease
+    
+    transition-delay: 0s; */
+}
+
+.itemCarrusel{
+    height: 200px;
+    position: relative;
+}
+.tarjetaCarrusel{
+    height: 100%;
+}
+
+.flechaCarrusel{
+    position: absolute; /**Toma como referencia su elemento posiciona mas cercano no estadic */
+    top:0;
+    height: 100%;
+    width: 100%;
+    /**que son*/
+    display: flex; /* Permite establecer que lo podremos en una posicion que quieramos dentro de su contenedor*/
+    align-items: center; /*Alineamos el elemento al centro del conteiner*/
+    justify-content: space-between; /*Alineamos a los costados los elementos*/
+    
+}
+
+#tajetaCarrusel-1{
+    background-color: rgb(124, 73, 172);
+}
+#tajetaCarrusel-2{
+    background-color: rgb(35, 120, 146);
+}
+
+a{
+    text-decoration:none;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}

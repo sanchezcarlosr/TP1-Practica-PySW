@@ -1,0 +1,320 @@
+/*Estilos de la Cabecera*/
+.miBlog{
+    background-color: rgb(16, 143, 143);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+/*Estilo del Menu-Navegador*/
+.menuContenedor{
+    background-color: #1b325ce8;
+    width: 100%;
+    display: flex;
+    clear: both; /*Para tener elementos flotantes derecha y izquierda*/
+    display: table;
+}
+.navegador{
+    width: 900px;
+    margin: 0 auto;/*permite centrar los elementos verticalmente*/
+}
+nav{
+    float: left;
+    
+}
+.menuContenedor .navegador ul li{
+    list-style: none;
+    float: left;
+    padding: 10px;
+}
+.menuContenedor .navegador ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 400ms ease;
+    display: inline-block;
+    padding:10px;
+    border-radius: 5px;
+}
+.menuContenedor .navegador ul li a:hover{
+    background-color: black;
+    transform: translateY(-13%);
+}
+/*Mantiene seleccionado la pagina en donde estemos parados*/
+.menuContenedor .navegador ul li a.selected{
+    background-color: black;
+}
+
+
+/* Estilos de los Articulos de Noticias*/
+
+.articulos{
+    float: left;
+    width: 1020px;
+    margin: 20px;
+    background-color: white;
+}
+
+/*Contenido de las tarjetas de noticias*/
+.noticias{
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    padding: 10px;
+
+    flex-wrap: wrap;
+}
+
+/*Las tarjetas y su contenido*/
+.card{
+    width: 300px;
+    margin: 20px;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0px 1px 10px rgb(0,0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 5);
+    transform: translateY(-5%);
+}
+.card .contenido{
+    text-align: center;
+    padding: 10px;
+}
+
+/*El parrafo de noticias, aplicado para esconder un parrafo largo y colocar en su lugar tres puntos suspensivo*/
+.card .contenido p{
+    line-height: 1.5;
+    width: 300px;
+    /*aplicacion de esconder el texto y colocar ...*/
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/*El boton de Leer Más*/
+.card .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: aqua;
+    border: 1px solid aqua;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+.card .contenido a:hover{
+    background: aqua;
+    color: white;
+    transform: translateX(14%) translateY(-15%);
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+/*Estilos para el ASSIDE*/
+aside{
+    float: left;
+    width: 210px;
+    margin: 20px 0px;
+    padding: 20px;
+    background: #CCCCCC;
+    border-radius: 9px;
+}
+aside .asside1 h3{
+    background-color: rgb(92, 79, 207);
+    padding: 10px;
+    border-top-right-radius: 9px;
+}
+.asside1{
+    background-color: rgb(127, 172, 255);
+    border-radius: 9px;
+}
+aside a{
+    text-decoration: none;
+}
+
+
+
+aside .asside2 h3{
+    background-color: blueviolet;
+    padding: 10px;
+    border-top-right-radius: 9px;
+}
+.asside2{
+    background-color: rgb(212, 148, 231);
+    border-radius: 9px;
+}
+.asside2 .irPerfil{
+    position: relative;
+    left: 50px;
+    padding: 10px;
+}
+
+
+/*Estilos para el footer*/
+footer{
+    display: block; /** Ocupa todo un bloque **/
+    background-color: #222;
+    padding: 3rem;
+    color:  white;
+    clear: both;
+}
+
+footer section{
+    float: right;
+}
+
+footer p{
+    margin: 0;
+}
+
+footer a{
+    transition: color 0.3s ease;
+    color: white;
+    text-decoration: none;
+}
+
+/*Estilos del formulario*/
+.contenedorFormulario .contenedorFormulario{
+    position: relative;
+}
+
+.contenedorFormulario .contenedorInformacion .primeraParte input{
+    width: 600px;
+    position: sticky;
+    left: 300px;
+    margin: 10px;
+}
+.contenedorFormulario .contenedorInformacion .segundaParte input{
+    width: 150px;
+    position: sticky;
+    left: 300px;
+    margin: 10px;
+}
+.contenedorFormulario .contenedorInformacion .segundaParte a{
+    width: 100px;
+    position: sticky;
+    left: 470px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.contenedorFormulario .contenedorInformacion .terceraParte select{
+    width: 580px;
+    position: sticky;
+    left: 300px;
+    text-align: center;
+    margin: 10px;
+}
+.contenedorFormulario .contenedorInformacion .quintaParte{
+    width: 580px;
+    position: sticky;
+    left: 300px;
+    margin: 10px;
+}
+.contenedorFormulario .contenedorInformacion .chek1{
+    position: sticky;
+    left: 290px;
+    margin: 10px;
+}
+.contenedorFormulario .contenedorInformacion .chek2{
+    position: sticky;
+    left: 400px;
+    margin: 10px;
+}
+.contenedorFormulario .contenedorInformacion .septimaParte input{
+    width: 400px;
+    position: sticky;
+    left: 300px;
+    margin: 10px;
+}
+
+/*Estilos para el carrusel de Imagenes*/
+.contenedorGaleria{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#conteItemsCarrusel{
+    display: block;
+    height: 200px;
+    width: 100%;
+    overflow: hidden;/*Oculta todo lo que queda fuera del bloque*/
+}
+.itemCarrusel{
+    height: 200px;
+    width: 900px;
+    position: relative;
+    left: 200px;
+    align-items: center;
+}
+.tarjetaCarrusel{
+    height: 100%;
+    position: relative;
+    left: 200px;
+}
+
+.flechaCarrusel{
+    position: absolute; /**Toma como referencia su elemento posiciona mas cercano no estadic */
+    top:0;
+    height: 100%;
+    width: 100%;
+    /**que son*/
+    display: flex; /* Permite establecer que lo podremos en una posicion que quieramos dentro de su contenedor*/
+    align-items: center; /*Alineamos el elemento al centro del conteiner*/
+    justify-content: space-between; /*Alineamos a los costados los elementos*/
+    
+}
+
+#conteItemsCarrusel img{
+    height: 40px;
+    width: 40px;
+}
+#conteItemsCarrusel .imagen{
+    height: 100%;
+    width: 500px;
+}
+
+/*Estilo de la pagina del perfil del usuario*/
+.contenedorPerfil{
+    float: left;
+    width: 300px;
+    margin: 20px;
+    background-color: rgb(60, 84, 189);
+}
+.contenedorPerfil h3{
+    background-color: blue;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+}
+.contenedorPerfil p{
+    text-align: center;
+    color: #CCCCCC;
+}
+.contenedorExtra{
+    float: left;
+    width: 800px;
+    margin: 20px 0px;
+    padding: 20px;
+    background: #CCCCCC;
+    border-radius: 9px;
+}
+
+.contenedorExtra h2{
+    border-bottom: 1px solid black;
+    color: blue;
+}
